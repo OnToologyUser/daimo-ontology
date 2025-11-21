@@ -31,7 +31,7 @@ dcat:servesDataset a owl:ObjectProperty ;
     rdfs:domain dcat:DataService ;
     rdfs:range dcat:Dataset .
 
-mls: a owl:Ontology ;
+<http://pionera.org/ns/mlds#> a owl:Ontology ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 <http://www.w3.org/ns/mls#SourceCode> a owl:ObjectProperty ;
