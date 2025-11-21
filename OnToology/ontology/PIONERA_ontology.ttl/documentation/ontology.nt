@@ -1,5 +1,5 @@
-<http://www.w3.org/ns/mls#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3.org/ns/mls#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<http://pionera.org/ns/mlds#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://pionera.org/ns/mlds#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 # 
 # 
 # #################################################################
