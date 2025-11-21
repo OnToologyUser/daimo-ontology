@@ -1,4 +1,10 @@
 [ {
+  "@id" : "http://pionera.org/ns/mlds#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
   "@id" : "http://pionera.org/ns/mlds#Model",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -78,12 +84,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/ns/mls#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "https://w3id.org/mod#createdWith" : [ {
-    "@id" : "https://chowlk.linkeddata.es/"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/mls#Algorithm",
