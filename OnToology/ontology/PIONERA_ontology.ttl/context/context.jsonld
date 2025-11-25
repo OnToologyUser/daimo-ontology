@@ -57,6 +57,9 @@
     "Prohibition" : {
       "@id" : "http://www.w3.org/ns/odrl/2/Prohibition"
     },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
     "hasPart" : {
       "@id" : "http://www.w3.org/ns/mls#hasPart",
       "@type" : "@id"
@@ -73,12 +76,18 @@
     "SoftwareConfiguration" : {
       "@id" : "https://w3id.org/okn/o/sd/SoftwareConfiguration"
     },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
     "Agent" : {
       "@id" : "http://xmlns.com/foaf/0.1/Agent"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator",
       "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
     },
     "DataService" : {
       "@id" : "http://www.w3.org/ns/dcat#DataService"
@@ -88,7 +97,7 @@
       "@type" : "@id"
     },
     "Model" : {
-      "@id" : "http://pionera.org/ns/mlds#Model"
+      "@id" : "http://purl.org/pionera/daimo#Model"
     },
     "Algorithm" : {
       "@id" : "http://www.w3.org/ns/mls#Algorithm"

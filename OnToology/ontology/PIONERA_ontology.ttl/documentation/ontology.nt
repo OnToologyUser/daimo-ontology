@@ -1,5 +1,5 @@
-<http://www.w3.org/ns/mls#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3.org/ns/mls#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<http://purl.org/pionera/daimo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/pionera/daimo#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 # 
 # 
 # #################################################################
@@ -8,6 +8,12 @@
 # #
 # #################################################################
 # 
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -66,7 +72,7 @@
 # http://www.w3.org/ns/mls#hasOutput
 <http://www.w3.org/ns/mls#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/mls#hasOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/mls#Run> .
-<http://www.w3.org/ns/mls#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://pionera.org/ns/mlds#Model> .
+<http://www.w3.org/ns/mls#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/pionera/daimo#Model> .
 <http://www.w3.org/ns/mls#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/mls#ModelEvaluation> .
 <http://www.w3.org/ns/mls#hasOutput> <http://www.w3.org/2000/01/rdf-schema#label> "has output" .
 # 
@@ -120,7 +126,7 @@
 # 
 # http://www.w3.org/ns/odrl/2/hasPolicy
 <http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pionera.org/ns/mlds#Model> .
+<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/pionera/daimo#Model> .
 <http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Agreement> .
 <http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Offer> .
 <http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "has policy" .
@@ -149,13 +155,13 @@
 # http://www.w3.org/ns/odrl/2/target
 <http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/odrl/2/Rule> .
-<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#range> <http://pionera.org/ns/mlds#Model> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/pionera/daimo#Model> .
 <http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#label> "target" .
 # 
 # http://www.w3.org/ns/prov#wasDerivedFrom
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pionera.org/ns/mlds#Model> .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://pionera.org/ns/mlds#Model> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/pionera/daimo#Model> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/pionera/daimo#Model> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "was derived from" .
 # 
 # 
@@ -167,10 +173,10 @@
 # #################################################################
 # 
 # 
-# http://pionera.org/ns/mlds#Model
-<http://pionera.org/ns/mlds#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://pionera.org/ns/mlds#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
-<http://pionera.org/ns/mlds#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model" .
+# http://purl.org/pionera/daimo#Model
+<http://purl.org/pionera/daimo#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/pionera/daimo#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/pionera/daimo#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model" .
 # 
 # http://w3id.org/mlso/HyperParameterCharacteristic
 <http://w3id.org/mlso/HyperParameterCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -259,6 +265,9 @@
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
 # 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/okn/o/sd/Software
 <https://w3id.org/okn/o/sd/Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd/Software> <http://www.w3.org/2000/01/rdf-schema#label> "Software" .
@@ -271,5 +280,31 @@
 # https://w3id.org/okn/o/sd/SourceCode
 <https://w3id.org/okn/o/sd/SourceCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd/SourceCode> <http://www.w3.org/2000/01/rdf-schema#label> "Source Code" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/pionera/daimo#
+<http://purl.org/pionera/daimo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/pionera/daimo#> <http://purl.org/dc/terms/creator> <http://purl.org/pionera/daimo#Edmundo> .
+<http://purl.org/pionera/daimo#> <http://purl.org/dc/terms/creator> <http://purl.org/pionera/daimo#Jiayun> .
+# 
+# http://purl.org/pionera/daimo#Edmundo
+<http://purl.org/pionera/daimo#Edmundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/pionera/daimo#Edmundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/pionera/daimo#Edmundo> <http://xmlns.com/foaf/0.1/mbox> <mailto:edmundo.mori.orrillo@upm.es> .
+<http://purl.org/pionera/daimo#Edmundo> <http://xmlns.com/foaf/0.1/name> "Edmundo de Elvira Mori Orrillo" .
+# 
+# http://purl.org/pionera/daimo#Jiayun
+<http://purl.org/pionera/daimo#Jiayun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/pionera/daimo#Jiayun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/pionera/daimo#Jiayun> <http://xmlns.com/foaf/0.1/mbox> <mailto:jiayun.liu@upm.es> .
+<http://purl.org/pionera/daimo#Jiayun> <http://xmlns.com/foaf/0.1/name> "Jiayun Liu" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

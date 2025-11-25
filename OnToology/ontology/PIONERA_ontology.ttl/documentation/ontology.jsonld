@@ -1,13 +1,4 @@
 [ {
-  "@id" : "http://pionera.org/ns/mlds#Model",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Model"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ]
-}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -18,6 +9,50 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://purl.org/pionera/daimo#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/pionera/daimo#Edmundo"
+  }, {
+    "@id" : "http://purl.org/pionera/daimo#Jiayun"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "http://purl.org/pionera/daimo#Edmundo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@id" : "mailto:edmundo.mori.orrillo@upm.es"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edmundo de Elvira Mori Orrillo"
+  } ]
+}, {
+  "@id" : "http://purl.org/pionera/daimo#Jiayun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@id" : "mailto:jiayun.liu@upm.es"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Jiayun Liu"
+  } ]
+}, {
+  "@id" : "http://purl.org/pionera/daimo#Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ]
 }, {
   "@id" : "http://w3id.org/mlso/HyperParameterCharacteristic",
@@ -78,12 +113,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/ns/mls#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "https://w3id.org/mod#createdWith" : [ {
-    "@id" : "https://chowlk.linkeddata.es/"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/mls#Algorithm",
@@ -185,7 +214,7 @@
     "@value" : "has output"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://pionera.org/ns/mlds#Model"
+    "@id" : "http://purl.org/pionera/daimo#Model"
   }, {
     "@id" : "http://www.w3.org/ns/mls#ModelEvaluation"
   } ]
@@ -340,7 +369,7 @@
   "@id" : "http://www.w3.org/ns/odrl/2/hasPolicy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://pionera.org/ns/mlds#Model"
+    "@id" : "http://purl.org/pionera/daimo#Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has policy"
@@ -402,19 +431,19 @@
     "@value" : "target"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://pionera.org/ns/mlds#Model"
+    "@id" : "http://purl.org/pionera/daimo#Model"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://pionera.org/ns/mlds#Model"
+    "@id" : "http://purl.org/pionera/daimo#Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "was derived from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://pionera.org/ns/mlds#Model"
+    "@id" : "http://purl.org/pionera/daimo#Model"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Agent",
@@ -422,6 +451,15 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Agent"
   } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/mod#createdWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
