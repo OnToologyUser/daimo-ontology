@@ -1,0 +1,978 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:mls="http://www.w3.org/ns/mls#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:daimo="http://purl.org/pionera/daimo#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#applicationDomain -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#applicationDomain"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#artifactChecksum -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#artifactChecksum"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#artifactKind -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#artifactKind"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#artifactLocation -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#artifactLocation"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#authenticationMethod -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#authenticationMethod"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#evaluationDataset -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#evaluationDataset"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#evaluationDatasetVersion -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#evaluationDatasetVersion"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#evaluationProtocol -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#evaluationProtocol"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#framework -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#framework"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hardwareRequirement -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hardwareRequirement"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hasAuditArtifact -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hasAuditArtifact"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hasEvaluation -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hasEvaluation"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hasEvaluationContext -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hasEvaluationContext"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hasIOContract -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hasIOContract"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hasImplementation -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hasImplementation"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hasReproducibilityArtifact -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hasReproducibilityArtifact"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#hasRuntimeProfile -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#hasRuntimeProfile"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#inputFormat -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#inputFormat"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#metricValue -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#metricValue"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#outputFormat -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#outputFormat"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#randomSeed -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#randomSeed"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#runIdentifier -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#runIdentifier"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#runPurpose -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#runPurpose"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#runStatus -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#runStatus"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#serviceEndpoint -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#serviceEndpoint"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#task -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/pionera/daimo#task"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessService -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessService"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#servesDataset -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#servesDataset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#version -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#version"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#executes -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/mls#executes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#hasOutput -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/mls#hasOutput"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#implements -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/mls#implements"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#realizes -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/mls#realizes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#specifiedBy -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/mls#specifiedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/hasPolicy -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/hasPolicy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/permission -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/permission"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/prohibition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/prohibition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/target -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/target"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#endedAtTime -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#endedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#startedAtTime -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/pionera/daimo#AuditArtifact -->
+
+
+    <Class rdf:about="http://purl.org/pionera/daimo#AuditArtifact"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#EvaluationContext -->
+
+
+    <Class rdf:about="http://purl.org/pionera/daimo#EvaluationContext"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#IOContract -->
+
+
+    <Class rdf:about="http://purl.org/pionera/daimo#IOContract"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#Model -->
+
+
+    <Class rdf:about="http://purl.org/pionera/daimo#Model"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#ReproducibilityArtifact -->
+
+
+    <Class rdf:about="http://purl.org/pionera/daimo#ReproducibilityArtifact"/>
+    
+
+
+    <!-- http://purl.org/pionera/daimo#RuntimeProfile -->
+
+
+    <Class rdf:about="http://purl.org/pionera/daimo#RuntimeProfile"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#DataService -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/dcat#DataService"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/dcat#Distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Algorithm -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/mls#Algorithm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#EvaluationMeasure -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/mls#EvaluationMeasure"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Implementation -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/mls#Implementation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#ModelEvaluation -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/mls#ModelEvaluation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Run -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/mls#Run"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Agreement -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/odrl/2/Agreement"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Offer -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/odrl/2/Offer"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Permission -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/odrl/2/Permission"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Prohibition -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/odrl/2/Prohibition"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pionera.org/example#Accuracy -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Accuracy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#EvaluationMeasure"/>
+        <rdfs:label>Accuracy</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#BinaryClassifier -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#BinaryClassifier">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Algorithm"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model0 -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model0">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#Model"/>
+        <terms:creator rdf:resource="http://pionera.org/example#Provider1"/>
+        <terms:license>apache-2.0</terms:license>
+        <daimo:applicationDomain>Climate analytics</daimo:applicationDomain>
+        <daimo:hasIOContract rdf:resource="http://pionera.org/example#Model0IOContract"/>
+        <daimo:task>Flood risk prediction</daimo:task>
+        <dcat:distribution rdf:resource="http://pionera.org/example#Model0Distribution"/>
+        <dcat:version>0.9.0</dcat:version>
+        <odrl:hasPolicy rdf:resource="http://pionera.org/example#Model0Policy"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model0Distribution -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model0Distribution">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:accessService rdf:resource="http://pionera.org/example#Model0Service"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model0IOContract -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model0IOContract">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#IOContract"/>
+        <daimo:authenticationMethod>OAuth2 client credentials</daimo:authenticationMethod>
+        <daimo:inputFormat>application/json</daimo:inputFormat>
+        <daimo:outputFormat>application/json</daimo:outputFormat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model0Permission -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model0Permission">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Permission"/>
+        <odrl:target rdf:resource="http://pionera.org/example#Model0"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model0Policy -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model0Policy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Agreement"/>
+        <odrl:permission rdf:resource="http://pionera.org/example#Model0Permission"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model0Service -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model0Service">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <daimo:serviceEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://api.pionera.org/models/model0/infer</daimo:serviceEndpoint>
+        <dcat:servesDataset rdf:resource="http://pionera.org/example#Model0"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1 -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#Model"/>
+        <terms:creator rdf:resource="http://pionera.org/example#Provider1"/>
+        <terms:license>apache-2.0</terms:license>
+        <daimo:applicationDomain>Climate analytics</daimo:applicationDomain>
+        <daimo:hasEvaluation rdf:resource="http://pionera.org/example#Model1Evaluation"/>
+        <daimo:hasIOContract rdf:resource="http://pionera.org/example#Model1IOContract"/>
+        <daimo:hasImplementation rdf:resource="http://pionera.org/example#Model1Implementation"/>
+        <daimo:task>Flood risk prediction</daimo:task>
+        <dcat:distribution rdf:resource="http://pionera.org/example#Model1Distribution"/>
+        <dcat:version>1.0.0</dcat:version>
+        <odrl:hasPolicy rdf:resource="http://pionera.org/example#Model1Policy"/>
+        <prov:wasDerivedFrom rdf:resource="http://pionera.org/example#Model0"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1Distribution -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1Distribution">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:accessService rdf:resource="http://pionera.org/example#Model1Service"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1EvalNotebook -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1EvalNotebook">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#ReproducibilityArtifact"/>
+        <daimo:artifactChecksum>91a49b17c479156975bcfda0cc59ceb61d3cd76a6db33f42456382761afa97a2</daimo:artifactChecksum>
+        <daimo:artifactKind>notebook</daimo:artifactKind>
+        <daimo:artifactLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://pionera.org/repro/model1-eval.ipynb</daimo:artifactLocation>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1EvalResults -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1EvalResults">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#ReproducibilityArtifact"/>
+        <daimo:artifactChecksum>f71b4707ba7ec7003ca30af0c40ead120d5ad1dc276241a9871d9ec5a4e7be23</daimo:artifactChecksum>
+        <daimo:artifactKind>results table</daimo:artifactKind>
+        <daimo:artifactLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://pionera.org/repro/model1-results.csv</daimo:artifactLocation>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1Evaluation -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1Evaluation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#ModelEvaluation"/>
+        <daimo:hasEvaluationContext rdf:resource="http://pionera.org/example#Model1EvaluationContext"/>
+        <daimo:hasReproducibilityArtifact rdf:resource="http://pionera.org/example#Model1EvalNotebook"/>
+        <daimo:hasReproducibilityArtifact rdf:resource="http://pionera.org/example#Model1EvalResults"/>
+        <daimo:metricValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.89</daimo:metricValue>
+        <mls:specifiedBy rdf:resource="http://pionera.org/example#Accuracy"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1EvaluationContext -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1EvaluationContext">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#EvaluationContext"/>
+        <daimo:evaluationDataset>ClimateBench-v1</daimo:evaluationDataset>
+        <daimo:evaluationDatasetVersion>2026.1</daimo:evaluationDatasetVersion>
+        <daimo:evaluationProtocol>Stratified holdout 80/20 with fixed seed 42</daimo:evaluationProtocol>
+        <daimo:randomSeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</daimo:randomSeed>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1IOContract -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1IOContract">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#IOContract"/>
+        <daimo:authenticationMethod>OAuth2 client credentials</daimo:authenticationMethod>
+        <daimo:inputFormat>application/json</daimo:inputFormat>
+        <daimo:outputFormat>application/json</daimo:outputFormat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1Implementation -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1Implementation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Implementation"/>
+        <daimo:hasRuntimeProfile rdf:resource="http://pionera.org/example#Model1RuntimeProfile"/>
+        <mls:implements rdf:resource="http://pionera.org/example#BinaryClassifier"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1Permission -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1Permission">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Permission"/>
+        <odrl:target rdf:resource="http://pionera.org/example#Model1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1Policy -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1Policy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Agreement"/>
+        <odrl:permission rdf:resource="http://pionera.org/example#Model1Permission"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1Run -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1Run">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Run"/>
+        <daimo:hasAuditArtifact rdf:resource="http://pionera.org/example#Model1RunLog"/>
+        <daimo:runIdentifier>run-2026-03-15-model1-001</daimo:runIdentifier>
+        <daimo:runPurpose>Nightly benchmark inference on ClimateBench-v1 validation split</daimo:runPurpose>
+        <daimo:runStatus>completed</daimo:runStatus>
+        <mls:executes rdf:resource="http://pionera.org/example#Model1Implementation"/>
+        <mls:hasOutput rdf:resource="http://pionera.org/example#Model1Evaluation"/>
+        <mls:realizes rdf:resource="http://pionera.org/example#BinaryClassifier"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-15T10:12:34Z</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-15T10:00:00Z</prov:startedAtTime>
+        <prov:wasAssociatedWith rdf:resource="http://pionera.org/example#PlatformOperator"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1RunLog -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1RunLog">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#AuditArtifact"/>
+        <daimo:artifactChecksum>73315211076b3f1a7c7c4980d3ac57ba6a1a893fd99cc178a7874653117efb82</daimo:artifactChecksum>
+        <daimo:artifactKind>structured log</daimo:artifactKind>
+        <daimo:artifactLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://pionera.org/audit/model1-run-001.jsonl</daimo:artifactLocation>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1RuntimeProfile -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1RuntimeProfile">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#RuntimeProfile"/>
+        <daimo:framework>PyTorch 2.1</daimo:framework>
+        <daimo:hardwareRequirement>1 GPU, 16GB RAM</daimo:hardwareRequirement>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model1Service -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model1Service">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <daimo:serviceEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://api.pionera.org/models/model1/infer</daimo:serviceEndpoint>
+        <dcat:servesDataset rdf:resource="http://pionera.org/example#Model1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2 -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#Model"/>
+        <terms:creator rdf:resource="http://pionera.org/example#Provider1"/>
+        <terms:license>research-only</terms:license>
+        <daimo:applicationDomain>Climate analytics</daimo:applicationDomain>
+        <daimo:hasEvaluation rdf:resource="http://pionera.org/example#Model2Evaluation"/>
+        <daimo:hasIOContract rdf:resource="http://pionera.org/example#Model2IOContract"/>
+        <daimo:hasImplementation rdf:resource="http://pionera.org/example#Model2Implementation"/>
+        <daimo:task>Flood risk prediction</daimo:task>
+        <dcat:distribution rdf:resource="http://pionera.org/example#Model2Distribution"/>
+        <dcat:version>2.1.0</dcat:version>
+        <odrl:hasPolicy rdf:resource="http://pionera.org/example#Model2Policy"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2Distribution -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2Distribution">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:accessService rdf:resource="http://pionera.org/example#Model2Service"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2EvalNotebook -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2EvalNotebook">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#ReproducibilityArtifact"/>
+        <daimo:artifactChecksum>225728ceab763c66384e3d0db00ea6145669c3670e41c5dbed2b5e66348d0f87</daimo:artifactChecksum>
+        <daimo:artifactKind>notebook</daimo:artifactKind>
+        <daimo:artifactLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://pionera.org/repro/model2-eval.ipynb</daimo:artifactLocation>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2EvalResults -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2EvalResults">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#ReproducibilityArtifact"/>
+        <daimo:artifactChecksum>a9ccd6249ae80eda96aa4b5db995b8d085e943aa08b48ba1cc827975a5d61d16</daimo:artifactChecksum>
+        <daimo:artifactKind>results table</daimo:artifactKind>
+        <daimo:artifactLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://pionera.org/repro/model2-results.csv</daimo:artifactLocation>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2Evaluation -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2Evaluation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#ModelEvaluation"/>
+        <daimo:hasEvaluationContext rdf:resource="http://pionera.org/example#Model2EvaluationContext"/>
+        <daimo:hasReproducibilityArtifact rdf:resource="http://pionera.org/example#Model2EvalNotebook"/>
+        <daimo:hasReproducibilityArtifact rdf:resource="http://pionera.org/example#Model2EvalResults"/>
+        <daimo:metricValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.82</daimo:metricValue>
+        <mls:specifiedBy rdf:resource="http://pionera.org/example#Accuracy"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2EvaluationContext -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2EvaluationContext">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#EvaluationContext"/>
+        <daimo:evaluationDataset>ClimateBench-v1</daimo:evaluationDataset>
+        <daimo:evaluationDatasetVersion>2026.1</daimo:evaluationDatasetVersion>
+        <daimo:evaluationProtocol>Stratified holdout 80/20 with fixed seed 42</daimo:evaluationProtocol>
+        <daimo:randomSeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</daimo:randomSeed>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2IOContract -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2IOContract">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#IOContract"/>
+        <daimo:authenticationMethod>API key</daimo:authenticationMethod>
+        <daimo:inputFormat>application/json</daimo:inputFormat>
+        <daimo:outputFormat>application/json</daimo:outputFormat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2Implementation -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2Implementation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Implementation"/>
+        <daimo:hasRuntimeProfile rdf:resource="http://pionera.org/example#Model2RuntimeProfile"/>
+        <mls:implements rdf:resource="http://pionera.org/example#TreeEnsemble"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2Policy -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2Policy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Offer"/>
+        <odrl:prohibition rdf:resource="http://pionera.org/example#Model2Prohibition"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2Prohibition -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2Prohibition">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Prohibition"/>
+        <odrl:target rdf:resource="http://pionera.org/example#Model2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2Run -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2Run">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Run"/>
+        <daimo:hasAuditArtifact rdf:resource="http://pionera.org/example#Model2RunLog"/>
+        <daimo:runIdentifier>run-2026-03-15-model2-001</daimo:runIdentifier>
+        <daimo:runPurpose>Candidate baseline benchmark on ClimateBench-v1 validation split</daimo:runPurpose>
+        <daimo:runStatus>completed</daimo:runStatus>
+        <mls:executes rdf:resource="http://pionera.org/example#Model2Implementation"/>
+        <mls:hasOutput rdf:resource="http://pionera.org/example#Model2Evaluation"/>
+        <mls:realizes rdf:resource="http://pionera.org/example#TreeEnsemble"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-15T11:06:12Z</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-15T11:00:00Z</prov:startedAtTime>
+        <prov:wasAssociatedWith rdf:resource="http://pionera.org/example#PlatformOperator"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2RunLog -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2RunLog">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#AuditArtifact"/>
+        <daimo:artifactChecksum>f03b46d94cc79cd5eeb5d2bb14a22d54ac2a9f9a32403932d65d49a2b073c90a</daimo:artifactChecksum>
+        <daimo:artifactKind>structured log</daimo:artifactKind>
+        <daimo:artifactLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://pionera.org/audit/model2-run-001.jsonl</daimo:artifactLocation>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2RuntimeProfile -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2RuntimeProfile">
+        <rdf:type rdf:resource="http://purl.org/pionera/daimo#RuntimeProfile"/>
+        <daimo:framework>XGBoost 2.0</daimo:framework>
+        <daimo:hardwareRequirement>CPU, 8GB RAM</daimo:hardwareRequirement>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Model2Service -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Model2Service">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <daimo:serviceEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://api.pionera.org/models/model2/infer</daimo:serviceEndpoint>
+        <dcat:servesDataset rdf:resource="http://pionera.org/example#Model2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#PlatformOperator -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#PlatformOperator">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <foaf:name>PIONERA MLOps operator</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#Provider1 -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#Provider1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <foaf:name>Example provider</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://pionera.org/example#TreeEnsemble -->
+
+
+    <NamedIndividual rdf:about="http://pionera.org/example#TreeEnsemble">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Algorithm"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

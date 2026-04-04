@@ -1,0 +1,1422 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#NodeShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#PropertyShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#datatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#minCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#nodeKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#path",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#targetClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://pionera.org/shapes#AuditArtifactShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Audit Artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Audit Artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#artifactChecksumProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#artifactKindProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#artifactLocationProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://purl.org/pionera/daimo#AuditArtifact"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#DataServiceShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Service"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Data Service"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#servesDatasetProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#serviceEndpointProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#DataService"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#DatasetShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dataset"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Dataset"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#creatorProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#distributionProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#DistributionShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Distribution"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Distribution"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#accessServiceProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Distribution"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#EvaluationContextShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evaluation Context"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Evaluation Context"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#evaluationDatasetProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#evaluationDatasetVersionProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#evaluationProtocolProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#randomSeedProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://purl.org/pionera/daimo#EvaluationContext"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#HyperParameterSettingShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HyperParameterSetting"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "HyperParameterSetting"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#specifiedByProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/mls#HyperParameterSetting"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#HyperParameterShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HyperParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "HyperParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#hasQualityProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/mls#HyperParameter"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#IOContractShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IO Contract"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "IO Contract"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#authenticationMethodProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#inputFormatProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#outputFormatProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://purl.org/pionera/daimo#IOContract"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#ImplementationShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#hasHyperParameterProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasPartProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasRuntimeProfileProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#implementsProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/mls#Implementation"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#ModelEvaluationShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ModelEvaluation"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "ModelEvaluation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#hasEvaluationContextProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasReproducibilityArtifactProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#metricValueProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#specifiedByProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/mls#ModelEvaluation"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#ModelShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Model"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Model"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#applicationDomainProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#creatorProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#distributionProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasEvaluationProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasIOContractProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasImplementationProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasPolicyProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#licenseProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#taskProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#versionProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#wasDerivedFromProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://purl.org/pionera/daimo#Model"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#ReproducibilityArtifactShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reproducibility Artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Reproducibility Artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#artifactChecksumProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#artifactKindProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#artifactLocationProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://purl.org/pionera/daimo#ReproducibilityArtifact"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#RunShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Run"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Run"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#endedAtTimeProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#executesProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasAuditArtifactProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hasOutputProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#realizesProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#runIdentifierProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#runPurposeProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#runStatusProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#startedAtTimeProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#wasAssociatedWithProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://www.w3.org/ns/mls#Run"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#RuntimeProfileShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Runtime Profile"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Runtime Profile"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://pionera.org/shapes#frameworkProperty"
+  }, {
+    "@id" : "https://pionera.org/shapes#hardwareRequirementProperty"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://purl.org/pionera/daimo#RuntimeProfile"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#accessServiceProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "access service"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#DataService"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "access service"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#accessService"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#applicationDomainProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "application domain"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "application domain"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#applicationDomain"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#artifactChecksumProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "artifact checksum"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "artifact checksum"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#artifactChecksum"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#artifactKindProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "artifact kind"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "artifact kind"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#artifactKind"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#artifactLocationProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "artifact location"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "artifact location"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#artifactLocation"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#authenticationMethodProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "authentication method"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "authentication method"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#authenticationMethod"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#creatorProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "creator"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "creator"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/dc/terms/creator"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#distributionProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "distribution"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Distribution"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "distribution"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#distribution"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#endedAtTimeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ended at time"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "ended at time"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/prov#endedAtTime"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#evaluationDatasetProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "evaluation dataset"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "evaluation dataset"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#evaluationDataset"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#evaluationDatasetVersionProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "evaluation dataset version"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "evaluation dataset version"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#evaluationDatasetVersion"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#evaluationProtocolProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "evaluation protocol"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "evaluation protocol"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#evaluationProtocol"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#executesProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "executes"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/mls#Implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "executes"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#executes"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#frameworkProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "framework"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "framework"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#framework"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hardwareRequirementProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hardware requirement"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "hardware requirement"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hardwareRequirement"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasAuditArtifactProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has audit artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://purl.org/pionera/daimo#AuditArtifact"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has audit artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hasAuditArtifact"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasEvaluationContextProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has evaluation context"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://purl.org/pionera/daimo#EvaluationContext"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has evaluation context"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hasEvaluationContext"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasEvaluationProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has evaluation"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/mls#ModelEvaluation"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has evaluation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hasEvaluation"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasHyperParameterProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has hyper-parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/mls#HyperParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has hyper-parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#hasHyperParameter"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasIOContractProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has IO contract"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://purl.org/pionera/daimo#IOContract"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has IO contract"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hasIOContract"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasImplementationProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/mls#Implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hasImplementation"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasOutputProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has output"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has output"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#hasOutput"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasPartProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has part"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has part"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#hasPart"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasPolicyProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has policy"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has policy"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/hasPolicy"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasQualityProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has quality"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/mlso/HyperParameterCharacteristic"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has quality"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#hasQuality"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasReproducibilityArtifactProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has reproducibility artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://purl.org/pionera/daimo#ReproducibilityArtifact"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has reproducibility artifact"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hasReproducibilityArtifact"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#hasRuntimeProfileProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has runtime profile"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://purl.org/pionera/daimo#RuntimeProfile"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has runtime profile"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#hasRuntimeProfile"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#implementsProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "implements"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/mls#Algorithm"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "implements"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#implements"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#inputFormatProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "input format"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "input format"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#inputFormat"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#licenseProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "license"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "license"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/dc/terms/license"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#metricValueProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "metric value"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "metric value"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#metricValue"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#outputFormatProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "output format"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "output format"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#outputFormat"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#randomSeedProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "random seed"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "random seed"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#randomSeed"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#realizesProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "realizes"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/mls#Algorithm"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "realizes"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#realizes"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#runIdentifierProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "run identifier"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "run identifier"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#runIdentifier"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#runPurposeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "run purpose"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "run purpose"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#runPurpose"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#runStatusProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "run status"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "run status"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#runStatus"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#servesDatasetProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "serves dataset"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "serves dataset"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#servesDataset"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#serviceEndpointProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "service endpoint"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "service endpoint"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#serviceEndpoint"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#specifiedByProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "specified by"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "specified by"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/mls#specifiedBy"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#startedAtTimeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "started at time"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "started at time"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/prov#startedAtTime"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#taskProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "task"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "task"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://purl.org/pionera/daimo#task"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#versionProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "version"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "version"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#version"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#wasAssociatedWithProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "was associated with"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "was associated with"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ]
+}, {
+  "@id" : "https://pionera.org/shapes#wasDerivedFromProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "was derived from"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://purl.org/pionera/daimo#Model"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "was derived from"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+  } ]
+} ]

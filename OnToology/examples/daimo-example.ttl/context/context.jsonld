@@ -1,0 +1,199 @@
+{
+  "@context" : {
+    "implements" : {
+      "@id" : "http://www.w3.org/ns/mls#implements"
+    },
+    "executes" : {
+      "@id" : "http://www.w3.org/ns/mls#executes"
+    },
+    "evaluationDatasetVersion" : {
+      "@id" : "http://purl.org/pionera/daimo#evaluationDatasetVersion"
+    },
+    "hasEvaluationContext" : {
+      "@id" : "http://purl.org/pionera/daimo#hasEvaluationContext"
+    },
+    "hasRuntimeProfile" : {
+      "@id" : "http://purl.org/pionera/daimo#hasRuntimeProfile"
+    },
+    "runStatus" : {
+      "@id" : "http://purl.org/pionera/daimo#runStatus"
+    },
+    "Run" : {
+      "@id" : "http://www.w3.org/ns/mls#Run"
+    },
+    "hasEvaluation" : {
+      "@id" : "http://purl.org/pionera/daimo#hasEvaluation"
+    },
+    "endedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#endedAtTime"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "specifiedBy" : {
+      "@id" : "http://www.w3.org/ns/mls#specifiedBy"
+    },
+    "EvaluationContext" : {
+      "@id" : "http://purl.org/pionera/daimo#EvaluationContext"
+    },
+    "hasImplementation" : {
+      "@id" : "http://purl.org/pionera/daimo#hasImplementation"
+    },
+    "Distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#Distribution"
+    },
+    "Permission" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Permission"
+    },
+    "metricValue" : {
+      "@id" : "http://purl.org/pionera/daimo#metricValue"
+    },
+    "artifactKind" : {
+      "@id" : "http://purl.org/pionera/daimo#artifactKind"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution"
+    },
+    "hasOutput" : {
+      "@id" : "http://www.w3.org/ns/mls#hasOutput"
+    },
+    "Offer" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Offer"
+    },
+    "randomSeed" : {
+      "@id" : "http://purl.org/pionera/daimo#randomSeed"
+    },
+    "Agreement" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Agreement"
+    },
+    "hardwareRequirement" : {
+      "@id" : "http://purl.org/pionera/daimo#hardwareRequirement"
+    },
+    "AuditArtifact" : {
+      "@id" : "http://purl.org/pionera/daimo#AuditArtifact"
+    },
+    "startedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#startedAtTime"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Prohibition" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Prohibition"
+    },
+    "framework" : {
+      "@id" : "http://purl.org/pionera/daimo#framework"
+    },
+    "authenticationMethod" : {
+      "@id" : "http://purl.org/pionera/daimo#authenticationMethod"
+    },
+    "EvaluationMeasure" : {
+      "@id" : "http://www.w3.org/ns/mls#EvaluationMeasure"
+    },
+    "runPurpose" : {
+      "@id" : "http://purl.org/pionera/daimo#runPurpose"
+    },
+    "ReproducibilityArtifact" : {
+      "@id" : "http://purl.org/pionera/daimo#ReproducibilityArtifact"
+    },
+    "RuntimeProfile" : {
+      "@id" : "http://purl.org/pionera/daimo#RuntimeProfile"
+    },
+    "serviceEndpoint" : {
+      "@id" : "http://purl.org/pionera/daimo#serviceEndpoint"
+    },
+    "evaluationProtocol" : {
+      "@id" : "http://purl.org/pionera/daimo#evaluationProtocol"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "DataService" : {
+      "@id" : "http://www.w3.org/ns/dcat#DataService"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    },
+    "Model" : {
+      "@id" : "http://purl.org/pionera/daimo#Model"
+    },
+    "Algorithm" : {
+      "@id" : "http://www.w3.org/ns/mls#Algorithm"
+    },
+    "accessService" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessService"
+    },
+    "hasPolicy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/hasPolicy"
+    },
+    "permission" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/permission"
+    },
+    "artifactLocation" : {
+      "@id" : "http://purl.org/pionera/daimo#artifactLocation"
+    },
+    "task" : {
+      "@id" : "http://purl.org/pionera/daimo#task"
+    },
+    "wasAssociatedWith" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+    },
+    "Implementation" : {
+      "@id" : "http://www.w3.org/ns/mls#Implementation"
+    },
+    "runIdentifier" : {
+      "@id" : "http://purl.org/pionera/daimo#runIdentifier"
+    },
+    "ModelEvaluation" : {
+      "@id" : "http://www.w3.org/ns/mls#ModelEvaluation"
+    },
+    "inputFormat" : {
+      "@id" : "http://purl.org/pionera/daimo#inputFormat"
+    },
+    "IOContract" : {
+      "@id" : "http://purl.org/pionera/daimo#IOContract"
+    },
+    "version" : {
+      "@id" : "http://www.w3.org/ns/dcat#version"
+    },
+    "target" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/target"
+    },
+    "evaluationDataset" : {
+      "@id" : "http://purl.org/pionera/daimo#evaluationDataset"
+    },
+    "artifactChecksum" : {
+      "@id" : "http://purl.org/pionera/daimo#artifactChecksum"
+    },
+    "servesDataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#servesDataset"
+    },
+    "hasReproducibilityArtifact" : {
+      "@id" : "http://purl.org/pionera/daimo#hasReproducibilityArtifact"
+    },
+    "applicationDomain" : {
+      "@id" : "http://purl.org/pionera/daimo#applicationDomain"
+    },
+    "prohibition" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/prohibition"
+    },
+    "hasIOContract" : {
+      "@id" : "http://purl.org/pionera/daimo#hasIOContract"
+    },
+    "realizes" : {
+      "@id" : "http://www.w3.org/ns/mls#realizes"
+    },
+    "outputFormat" : {
+      "@id" : "http://purl.org/pionera/daimo#outputFormat"
+    },
+    "hasAuditArtifact" : {
+      "@id" : "http://purl.org/pionera/daimo#hasAuditArtifact"
+    }
+  }
+}

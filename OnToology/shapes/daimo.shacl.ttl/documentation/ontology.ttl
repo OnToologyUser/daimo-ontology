@@ -1,0 +1,702 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#minCount
+<http://www.w3.org/ns/shacl#minCount> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#name
+<http://www.w3.org/ns/shacl#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://pionera.org/shapes#AuditArtifactShape
+<https://pionera.org/shapes#AuditArtifactShape> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                rdfs:label "Audit Artifact" ;
+                                                <http://www.w3.org/ns/shacl#name> "Audit Artifact" ;
+                                                <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#artifactChecksumProperty> ,
+                                                                                      <https://pionera.org/shapes#artifactKindProperty> ,
+                                                                                      <https://pionera.org/shapes#artifactLocationProperty> ;
+                                                <http://www.w3.org/ns/shacl#targetClass> <http://purl.org/pionera/daimo#AuditArtifact> .
+
+
+###  https://pionera.org/shapes#DataServiceShape
+<https://pionera.org/shapes#DataServiceShape> rdf:type owl:NamedIndividual ,
+                                                       <http://www.w3.org/ns/shacl#NodeShape> ;
+                                              rdfs:label "Data Service" ;
+                                              <http://www.w3.org/ns/shacl#name> "Data Service" ;
+                                              <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                              <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#servesDatasetProperty> ,
+                                                                                    <https://pionera.org/shapes#serviceEndpointProperty> ;
+                                              <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#DataService> .
+
+
+###  https://pionera.org/shapes#DatasetShape
+<https://pionera.org/shapes#DatasetShape> rdf:type owl:NamedIndividual ,
+                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                          rdfs:label "Dataset" ;
+                                          <http://www.w3.org/ns/shacl#name> "Dataset" ;
+                                          <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                          <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#creatorProperty> ,
+                                                                                <https://pionera.org/shapes#distributionProperty> ;
+                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Dataset> .
+
+
+###  https://pionera.org/shapes#DistributionShape
+<https://pionera.org/shapes#DistributionShape> rdf:type owl:NamedIndividual ,
+                                                        <http://www.w3.org/ns/shacl#NodeShape> ;
+                                               rdfs:label "Distribution" ;
+                                               <http://www.w3.org/ns/shacl#name> "Distribution" ;
+                                               <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                               <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#accessServiceProperty> ;
+                                               <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Distribution> .
+
+
+###  https://pionera.org/shapes#EvaluationContextShape
+<https://pionera.org/shapes#EvaluationContextShape> rdf:type owl:NamedIndividual ,
+                                                             <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                    rdfs:label "Evaluation Context" ;
+                                                    <http://www.w3.org/ns/shacl#name> "Evaluation Context" ;
+                                                    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                    <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#evaluationDatasetProperty> ,
+                                                                                          <https://pionera.org/shapes#evaluationDatasetVersionProperty> ,
+                                                                                          <https://pionera.org/shapes#evaluationProtocolProperty> ,
+                                                                                          <https://pionera.org/shapes#randomSeedProperty> ;
+                                                    <http://www.w3.org/ns/shacl#targetClass> <http://purl.org/pionera/daimo#EvaluationContext> .
+
+
+###  https://pionera.org/shapes#HyperParameterSettingShape
+<https://pionera.org/shapes#HyperParameterSettingShape> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                        rdfs:label "HyperParameterSetting" ;
+                                                        <http://www.w3.org/ns/shacl#name> "HyperParameterSetting" ;
+                                                        <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                        <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#specifiedByProperty> ;
+                                                        <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/mls#HyperParameterSetting> .
+
+
+###  https://pionera.org/shapes#HyperParameterShape
+<https://pionera.org/shapes#HyperParameterShape> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                 rdfs:label "HyperParameter" ;
+                                                 <http://www.w3.org/ns/shacl#name> "HyperParameter" ;
+                                                 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                 <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#hasQualityProperty> ;
+                                                 <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/mls#HyperParameter> .
+
+
+###  https://pionera.org/shapes#IOContractShape
+<https://pionera.org/shapes#IOContractShape> rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/shacl#NodeShape> ;
+                                             rdfs:label "IO Contract" ;
+                                             <http://www.w3.org/ns/shacl#name> "IO Contract" ;
+                                             <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                             <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#authenticationMethodProperty> ,
+                                                                                   <https://pionera.org/shapes#inputFormatProperty> ,
+                                                                                   <https://pionera.org/shapes#outputFormatProperty> ;
+                                             <http://www.w3.org/ns/shacl#targetClass> <http://purl.org/pionera/daimo#IOContract> .
+
+
+###  https://pionera.org/shapes#ImplementationShape
+<https://pionera.org/shapes#ImplementationShape> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                 rdfs:label "Implementation" ;
+                                                 <http://www.w3.org/ns/shacl#name> "Implementation" ;
+                                                 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                 <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#hasHyperParameterProperty> ,
+                                                                                       <https://pionera.org/shapes#hasPartProperty> ,
+                                                                                       <https://pionera.org/shapes#hasRuntimeProfileProperty> ,
+                                                                                       <https://pionera.org/shapes#implementsProperty> ;
+                                                 <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/mls#Implementation> .
+
+
+###  https://pionera.org/shapes#ModelEvaluationShape
+<https://pionera.org/shapes#ModelEvaluationShape> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                  rdfs:label "ModelEvaluation" ;
+                                                  <http://www.w3.org/ns/shacl#name> "ModelEvaluation" ;
+                                                  <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                  <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#hasEvaluationContextProperty> ,
+                                                                                        <https://pionera.org/shapes#hasReproducibilityArtifactProperty> ,
+                                                                                        <https://pionera.org/shapes#metricValueProperty> ,
+                                                                                        <https://pionera.org/shapes#specifiedByProperty> ;
+                                                  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/mls#ModelEvaluation> .
+
+
+###  https://pionera.org/shapes#ModelShape
+<https://pionera.org/shapes#ModelShape> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/ns/shacl#NodeShape> ;
+                                        rdfs:label "Model" ;
+                                        <http://www.w3.org/ns/shacl#name> "Model" ;
+                                        <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                        <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#applicationDomainProperty> ,
+                                                                              <https://pionera.org/shapes#creatorProperty> ,
+                                                                              <https://pionera.org/shapes#distributionProperty> ,
+                                                                              <https://pionera.org/shapes#hasEvaluationProperty> ,
+                                                                              <https://pionera.org/shapes#hasIOContractProperty> ,
+                                                                              <https://pionera.org/shapes#hasImplementationProperty> ,
+                                                                              <https://pionera.org/shapes#hasPolicyProperty> ,
+                                                                              <https://pionera.org/shapes#licenseProperty> ,
+                                                                              <https://pionera.org/shapes#taskProperty> ,
+                                                                              <https://pionera.org/shapes#versionProperty> ,
+                                                                              <https://pionera.org/shapes#wasDerivedFromProperty> ;
+                                        <http://www.w3.org/ns/shacl#targetClass> <http://purl.org/pionera/daimo#Model> .
+
+
+###  https://pionera.org/shapes#ReproducibilityArtifactShape
+<https://pionera.org/shapes#ReproducibilityArtifactShape> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          rdfs:label "Reproducibility Artifact" ;
+                                                          <http://www.w3.org/ns/shacl#name> "Reproducibility Artifact" ;
+                                                          <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                          <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#artifactChecksumProperty> ,
+                                                                                                <https://pionera.org/shapes#artifactKindProperty> ,
+                                                                                                <https://pionera.org/shapes#artifactLocationProperty> ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://purl.org/pionera/daimo#ReproducibilityArtifact> .
+
+
+###  https://pionera.org/shapes#RunShape
+<https://pionera.org/shapes#RunShape> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/ns/shacl#NodeShape> ;
+                                      rdfs:label "Run" ;
+                                      <http://www.w3.org/ns/shacl#name> "Run" ;
+                                      <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                      <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#endedAtTimeProperty> ,
+                                                                            <https://pionera.org/shapes#executesProperty> ,
+                                                                            <https://pionera.org/shapes#hasAuditArtifactProperty> ,
+                                                                            <https://pionera.org/shapes#hasOutputProperty> ,
+                                                                            <https://pionera.org/shapes#realizesProperty> ,
+                                                                            <https://pionera.org/shapes#runIdentifierProperty> ,
+                                                                            <https://pionera.org/shapes#runPurposeProperty> ,
+                                                                            <https://pionera.org/shapes#runStatusProperty> ,
+                                                                            <https://pionera.org/shapes#startedAtTimeProperty> ,
+                                                                            <https://pionera.org/shapes#wasAssociatedWithProperty> ;
+                                      <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/mls#Run> .
+
+
+###  https://pionera.org/shapes#RuntimeProfileShape
+<https://pionera.org/shapes#RuntimeProfileShape> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                 rdfs:label "Runtime Profile" ;
+                                                 <http://www.w3.org/ns/shacl#name> "Runtime Profile" ;
+                                                 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                 <http://www.w3.org/ns/shacl#property> <https://pionera.org/shapes#frameworkProperty> ,
+                                                                                       <https://pionera.org/shapes#hardwareRequirementProperty> ;
+                                                 <http://www.w3.org/ns/shacl#targetClass> <http://purl.org/pionera/daimo#RuntimeProfile> .
+
+
+###  https://pionera.org/shapes#accessServiceProperty
+<https://pionera.org/shapes#accessServiceProperty> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                   rdfs:label "access service" ;
+                                                   <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/dcat#DataService> ;
+                                                   <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                   <http://www.w3.org/ns/shacl#name> "access service" ;
+                                                   <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                   <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessService> .
+
+
+###  https://pionera.org/shapes#applicationDomainProperty
+<https://pionera.org/shapes#applicationDomainProperty> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                       rdfs:label "application domain" ;
+                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                       <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                       <http://www.w3.org/ns/shacl#name> "application domain" ;
+                                                       <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#applicationDomain> .
+
+
+###  https://pionera.org/shapes#artifactChecksumProperty
+<https://pionera.org/shapes#artifactChecksumProperty> rdf:type owl:NamedIndividual ,
+                                                               <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                      rdfs:label "artifact checksum" ;
+                                                      <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                      <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                      <http://www.w3.org/ns/shacl#name> "artifact checksum" ;
+                                                      <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#artifactChecksum> .
+
+
+###  https://pionera.org/shapes#artifactKindProperty
+<https://pionera.org/shapes#artifactKindProperty> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                  rdfs:label "artifact kind" ;
+                                                  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                  <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                  <http://www.w3.org/ns/shacl#name> "artifact kind" ;
+                                                  <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#artifactKind> .
+
+
+###  https://pionera.org/shapes#artifactLocationProperty
+<https://pionera.org/shapes#artifactLocationProperty> rdf:type owl:NamedIndividual ,
+                                                               <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                      rdfs:label "artifact location" ;
+                                                      <http://www.w3.org/ns/shacl#datatype> xsd:anyURI ;
+                                                      <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                      <http://www.w3.org/ns/shacl#name> "artifact location" ;
+                                                      <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#artifactLocation> .
+
+
+###  https://pionera.org/shapes#authenticationMethodProperty
+<https://pionera.org/shapes#authenticationMethodProperty> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                          rdfs:label "authentication method" ;
+                                                          <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                          <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                          <http://www.w3.org/ns/shacl#name> "authentication method" ;
+                                                          <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#authenticationMethod> .
+
+
+###  https://pionera.org/shapes#creatorProperty
+<https://pionera.org/shapes#creatorProperty> rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                             rdfs:label "creator" ;
+                                             <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> ;
+                                             <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                             <http://www.w3.org/ns/shacl#name> "creator" ;
+                                             <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                             <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator> .
+
+
+###  https://pionera.org/shapes#distributionProperty
+<https://pionera.org/shapes#distributionProperty> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                  rdfs:label "distribution" ;
+                                                  <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/dcat#Distribution> ;
+                                                  <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                  <http://www.w3.org/ns/shacl#name> "distribution" ;
+                                                  <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#distribution> .
+
+
+###  https://pionera.org/shapes#endedAtTimeProperty
+<https://pionera.org/shapes#endedAtTimeProperty> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                 rdfs:label "ended at time" ;
+                                                 <http://www.w3.org/ns/shacl#datatype> xsd:dateTime ;
+                                                 <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                 <http://www.w3.org/ns/shacl#name> "ended at time" ;
+                                                 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#endedAtTime> .
+
+
+###  https://pionera.org/shapes#evaluationDatasetProperty
+<https://pionera.org/shapes#evaluationDatasetProperty> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                       rdfs:label "evaluation dataset" ;
+                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                       <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                       <http://www.w3.org/ns/shacl#name> "evaluation dataset" ;
+                                                       <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#evaluationDataset> .
+
+
+###  https://pionera.org/shapes#evaluationDatasetVersionProperty
+<https://pionera.org/shapes#evaluationDatasetVersionProperty> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                              rdfs:label "evaluation dataset version" ;
+                                                              <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                              <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                              <http://www.w3.org/ns/shacl#name> "evaluation dataset version" ;
+                                                              <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#evaluationDatasetVersion> .
+
+
+###  https://pionera.org/shapes#evaluationProtocolProperty
+<https://pionera.org/shapes#evaluationProtocolProperty> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                        rdfs:label "evaluation protocol" ;
+                                                        <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                        <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                        <http://www.w3.org/ns/shacl#name> "evaluation protocol" ;
+                                                        <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#evaluationProtocol> .
+
+
+###  https://pionera.org/shapes#executesProperty
+<https://pionera.org/shapes#executesProperty> rdf:type owl:NamedIndividual ,
+                                                       <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                              rdfs:label "executes" ;
+                                              <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/mls#Implementation> ;
+                                              <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                              <http://www.w3.org/ns/shacl#name> "executes" ;
+                                              <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                              <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#executes> .
+
+
+###  https://pionera.org/shapes#frameworkProperty
+<https://pionera.org/shapes#frameworkProperty> rdf:type owl:NamedIndividual ,
+                                                        <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                               rdfs:label "framework" ;
+                                               <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                               <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                               <http://www.w3.org/ns/shacl#name> "framework" ;
+                                               <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#framework> .
+
+
+###  https://pionera.org/shapes#hardwareRequirementProperty
+<https://pionera.org/shapes#hardwareRequirementProperty> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                         rdfs:label "hardware requirement" ;
+                                                         <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                         <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                         <http://www.w3.org/ns/shacl#name> "hardware requirement" ;
+                                                         <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hardwareRequirement> .
+
+
+###  https://pionera.org/shapes#hasAuditArtifactProperty
+<https://pionera.org/shapes#hasAuditArtifactProperty> rdf:type owl:NamedIndividual ,
+                                                               <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                      rdfs:label "has audit artifact" ;
+                                                      <http://www.w3.org/ns/shacl#class> <http://purl.org/pionera/daimo#AuditArtifact> ;
+                                                      <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                      <http://www.w3.org/ns/shacl#name> "has audit artifact" ;
+                                                      <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                      <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hasAuditArtifact> .
+
+
+###  https://pionera.org/shapes#hasEvaluationContextProperty
+<https://pionera.org/shapes#hasEvaluationContextProperty> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                          rdfs:label "has evaluation context" ;
+                                                          <http://www.w3.org/ns/shacl#class> <http://purl.org/pionera/daimo#EvaluationContext> ;
+                                                          <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                          <http://www.w3.org/ns/shacl#name> "has evaluation context" ;
+                                                          <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                          <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hasEvaluationContext> .
+
+
+###  https://pionera.org/shapes#hasEvaluationProperty
+<https://pionera.org/shapes#hasEvaluationProperty> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                   rdfs:label "has evaluation" ;
+                                                   <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/mls#ModelEvaluation> ;
+                                                   <http://www.w3.org/ns/shacl#name> "has evaluation" ;
+                                                   <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                   <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hasEvaluation> .
+
+
+###  https://pionera.org/shapes#hasHyperParameterProperty
+<https://pionera.org/shapes#hasHyperParameterProperty> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                       rdfs:label "has hyper-parameter" ;
+                                                       <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/mls#HyperParameter> ;
+                                                       <http://www.w3.org/ns/shacl#name> "has hyper-parameter" ;
+                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                       <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#hasHyperParameter> .
+
+
+###  https://pionera.org/shapes#hasIOContractProperty
+<https://pionera.org/shapes#hasIOContractProperty> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                   rdfs:label "has IO contract" ;
+                                                   <http://www.w3.org/ns/shacl#class> <http://purl.org/pionera/daimo#IOContract> ;
+                                                   <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                   <http://www.w3.org/ns/shacl#name> "has IO contract" ;
+                                                   <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                   <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hasIOContract> .
+
+
+###  https://pionera.org/shapes#hasImplementationProperty
+<https://pionera.org/shapes#hasImplementationProperty> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                       rdfs:label "has implementation" ;
+                                                       <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/mls#Implementation> ;
+                                                       <http://www.w3.org/ns/shacl#name> "has implementation" ;
+                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                       <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hasImplementation> .
+
+
+###  https://pionera.org/shapes#hasOutputProperty
+<https://pionera.org/shapes#hasOutputProperty> rdf:type owl:NamedIndividual ,
+                                                        <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                               rdfs:label "has output" ;
+                                               <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                               <http://www.w3.org/ns/shacl#name> "has output" ;
+                                               <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                               <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#hasOutput> .
+
+
+###  https://pionera.org/shapes#hasPartProperty
+<https://pionera.org/shapes#hasPartProperty> rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                             rdfs:label "has part" ;
+                                             <http://www.w3.org/ns/shacl#name> "has part" ;
+                                             <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                             <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#hasPart> .
+
+
+###  https://pionera.org/shapes#hasPolicyProperty
+<https://pionera.org/shapes#hasPolicyProperty> rdf:type owl:NamedIndividual ,
+                                                        <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                               rdfs:label "has policy" ;
+                                               <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                               <http://www.w3.org/ns/shacl#name> "has policy" ;
+                                               <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                               <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/hasPolicy> .
+
+
+###  https://pionera.org/shapes#hasQualityProperty
+<https://pionera.org/shapes#hasQualityProperty> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                rdfs:label "has quality" ;
+                                                <http://www.w3.org/ns/shacl#class> <http://w3id.org/mlso/HyperParameterCharacteristic> ;
+                                                <http://www.w3.org/ns/shacl#name> "has quality" ;
+                                                <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#hasQuality> .
+
+
+###  https://pionera.org/shapes#hasReproducibilityArtifactProperty
+<https://pionera.org/shapes#hasReproducibilityArtifactProperty> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                rdfs:label "has reproducibility artifact" ;
+                                                                <http://www.w3.org/ns/shacl#class> <http://purl.org/pionera/daimo#ReproducibilityArtifact> ;
+                                                                <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                                <http://www.w3.org/ns/shacl#name> "has reproducibility artifact" ;
+                                                                <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hasReproducibilityArtifact> .
+
+
+###  https://pionera.org/shapes#hasRuntimeProfileProperty
+<https://pionera.org/shapes#hasRuntimeProfileProperty> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                       rdfs:label "has runtime profile" ;
+                                                       <http://www.w3.org/ns/shacl#class> <http://purl.org/pionera/daimo#RuntimeProfile> ;
+                                                       <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                       <http://www.w3.org/ns/shacl#name> "has runtime profile" ;
+                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                       <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#hasRuntimeProfile> .
+
+
+###  https://pionera.org/shapes#implementsProperty
+<https://pionera.org/shapes#implementsProperty> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                rdfs:label "implements" ;
+                                                <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/mls#Algorithm> ;
+                                                <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                <http://www.w3.org/ns/shacl#name> "implements" ;
+                                                <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#implements> .
+
+
+###  https://pionera.org/shapes#inputFormatProperty
+<https://pionera.org/shapes#inputFormatProperty> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                 rdfs:label "input format" ;
+                                                 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                 <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                 <http://www.w3.org/ns/shacl#name> "input format" ;
+                                                 <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#inputFormat> .
+
+
+###  https://pionera.org/shapes#licenseProperty
+<https://pionera.org/shapes#licenseProperty> rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                             rdfs:label "license" ;
+                                             <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                             <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                             <http://www.w3.org/ns/shacl#name> "license" ;
+                                             <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/license> .
+
+
+###  https://pionera.org/shapes#metricValueProperty
+<https://pionera.org/shapes#metricValueProperty> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                 rdfs:label "metric value" ;
+                                                 <http://www.w3.org/ns/shacl#datatype> xsd:decimal ;
+                                                 <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                 <http://www.w3.org/ns/shacl#name> "metric value" ;
+                                                 <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#metricValue> .
+
+
+###  https://pionera.org/shapes#outputFormatProperty
+<https://pionera.org/shapes#outputFormatProperty> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                  rdfs:label "output format" ;
+                                                  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                  <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                  <http://www.w3.org/ns/shacl#name> "output format" ;
+                                                  <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#outputFormat> .
+
+
+###  https://pionera.org/shapes#randomSeedProperty
+<https://pionera.org/shapes#randomSeedProperty> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                rdfs:label "random seed" ;
+                                                <http://www.w3.org/ns/shacl#datatype> xsd:integer ;
+                                                <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                <http://www.w3.org/ns/shacl#name> "random seed" ;
+                                                <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#randomSeed> .
+
+
+###  https://pionera.org/shapes#realizesProperty
+<https://pionera.org/shapes#realizesProperty> rdf:type owl:NamedIndividual ,
+                                                       <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                              rdfs:label "realizes" ;
+                                              <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/mls#Algorithm> ;
+                                              <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                              <http://www.w3.org/ns/shacl#name> "realizes" ;
+                                              <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                              <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#realizes> .
+
+
+###  https://pionera.org/shapes#runIdentifierProperty
+<https://pionera.org/shapes#runIdentifierProperty> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                   rdfs:label "run identifier" ;
+                                                   <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                   <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                   <http://www.w3.org/ns/shacl#name> "run identifier" ;
+                                                   <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#runIdentifier> .
+
+
+###  https://pionera.org/shapes#runPurposeProperty
+<https://pionera.org/shapes#runPurposeProperty> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                rdfs:label "run purpose" ;
+                                                <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                <http://www.w3.org/ns/shacl#name> "run purpose" ;
+                                                <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#runPurpose> .
+
+
+###  https://pionera.org/shapes#runStatusProperty
+<https://pionera.org/shapes#runStatusProperty> rdf:type owl:NamedIndividual ,
+                                                        <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                               rdfs:label "run status" ;
+                                               <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                               <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                               <http://www.w3.org/ns/shacl#name> "run status" ;
+                                               <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#runStatus> .
+
+
+###  https://pionera.org/shapes#servesDatasetProperty
+<https://pionera.org/shapes#servesDatasetProperty> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                   rdfs:label "serves dataset" ;
+                                                   <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/dcat#Dataset> ;
+                                                   <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                   <http://www.w3.org/ns/shacl#name> "serves dataset" ;
+                                                   <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                   <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#servesDataset> .
+
+
+###  https://pionera.org/shapes#serviceEndpointProperty
+<https://pionera.org/shapes#serviceEndpointProperty> rdf:type owl:NamedIndividual ,
+                                                              <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                     rdfs:label "service endpoint" ;
+                                                     <http://www.w3.org/ns/shacl#datatype> xsd:anyURI ;
+                                                     <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                     <http://www.w3.org/ns/shacl#name> "service endpoint" ;
+                                                     <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#serviceEndpoint> .
+
+
+###  https://pionera.org/shapes#specifiedByProperty
+<https://pionera.org/shapes#specifiedByProperty> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                 rdfs:label "specified by" ;
+                                                 <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                 <http://www.w3.org/ns/shacl#name> "specified by" ;
+                                                 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/mls#specifiedBy> .
+
+
+###  https://pionera.org/shapes#startedAtTimeProperty
+<https://pionera.org/shapes#startedAtTimeProperty> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                   rdfs:label "started at time" ;
+                                                   <http://www.w3.org/ns/shacl#datatype> xsd:dateTime ;
+                                                   <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                   <http://www.w3.org/ns/shacl#name> "started at time" ;
+                                                   <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#startedAtTime> .
+
+
+###  https://pionera.org/shapes#taskProperty
+<https://pionera.org/shapes#taskProperty> rdf:type owl:NamedIndividual ,
+                                                   <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                          rdfs:label "task" ;
+                                          <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                          <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                          <http://www.w3.org/ns/shacl#name> "task" ;
+                                          <http://www.w3.org/ns/shacl#path> <http://purl.org/pionera/daimo#task> .
+
+
+###  https://pionera.org/shapes#versionProperty
+<https://pionera.org/shapes#versionProperty> rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                             rdfs:label "version" ;
+                                             <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                             <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                             <http://www.w3.org/ns/shacl#name> "version" ;
+                                             <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#version> .
+
+
+###  https://pionera.org/shapes#wasAssociatedWithProperty
+<https://pionera.org/shapes#wasAssociatedWithProperty> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                       rdfs:label "was associated with" ;
+                                                       <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> ;
+                                                       <http://www.w3.org/ns/shacl#minCount> 1 ;
+                                                       <http://www.w3.org/ns/shacl#name> "was associated with" ;
+                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                       <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+
+
+###  https://pionera.org/shapes#wasDerivedFromProperty
+<https://pionera.org/shapes#wasDerivedFromProperty> rdf:type owl:NamedIndividual ,
+                                                             <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                    rdfs:label "was derived from" ;
+                                                    <http://www.w3.org/ns/shacl#class> <http://purl.org/pionera/daimo#Model> ;
+                                                    <http://www.w3.org/ns/shacl#name> "was derived from" ;
+                                                    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
